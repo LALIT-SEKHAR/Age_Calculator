@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age calculator</title>
+    <link rel="shortcut icon" href="AgeCal.logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="Age_Calculator.css">
+</head>
+<body>
+    <header>
+        <h1>AGE CALCULATOR</h1>
+    </header>
+    <h2 id="gritting"></h2>
+    <div id="warning">
+        <h4> Please fill the bellow field's :(</h4>
+    </div>
+    <section>
+        <div id="entryPage">
+            <div id="databox">
+                <input id="name" type="text" placeholder="Please enter your name">
+                <input id="date" type="Date">
+                <input onclick="Switching();" id="submit" type="button" value="Submit">
+            </div>
+        </div>
+        <div id="infoPage">
+            <div id="result">
+                <h3>Years:<span id="year"></span></h3>
+                <h3>Months:<span id="month"></span></h3>
+                <h3>Weeks:<span id="week"></span></h3>
+                <h3>Days:<span id="day"></span></h3>
+                <h3>Hours:<span id="hour"></span></h3>
+                <h3>Minuts:<span id="minut"></span></h3>
+                <h3>Seconds:<span id="second"></span></h3>
+            </div>
+        </div>
+        <div id="upcommingbirthday">
+            <h4 id="countdownHeading">Your corrent age is</h4>
+            <div id="countdown"></div>
+        </div>
+    </section>
+    <script src="Age_Calculator.js"></script>
+</body>
+</html>

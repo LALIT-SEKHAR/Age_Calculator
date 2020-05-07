@@ -1,0 +1,135 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+    background:
+    radial-gradient(black 3px, transparent 4px),
+    radial-gradient(black 3px, transparent 4px),
+    linear-gradient(#fff 4px, transparent 0),
+    linear-gradient(45deg, transparent 74px, transparent 75px, #a4a4a4 75px, #a4a4a4 76px, transparent 77px, transparent 109px),
+    linear-gradient(-45deg, transparent 75px, transparent 76px, #a4a4a4 76px, #a4a4a4 77px, transparent 78px, transparent 109px),
+    #fff;
+    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
+    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+}
+header{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.253);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    background: linear-gradient(to right,#FF3C3C,#BE5FAB,#3AA7E7);
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 89vh;       
+}
+#entryPage{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    height: 15em;
+    width: 25em;
+    background: linear-gradient(to right,#FF3C3C,#BE5FAB,#3AA7E7);
+    visibility: visible;
+}
+#databox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#databox input{
+    border: none;
+    text-align: center;
+    border-radius: 30px;
+    height: 3em;
+}
+#name{
+    width: 20em;
+    padding: 0em 1em 0em 1em;
+}
+#date{
+    margin: 2em 0em 2em 0em;
+    width: 15em;
+}
+#submit{
+    width: 8em;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#gritting{
+    color: black;
+    font-family:'Courier New', Courier, monospace;
+    position: absolute;
+    margin-left: 0.5em;
+    background-color: rgba(255, 255, 255, 0.938);
+}
+#infoPage{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    position: absolute;
+    border-radius: 10px;
+    height: 19em;
+    width: 25em;
+    background: linear-gradient(to right,#FF3C3C,#BE5FAB,#3AA7E7);
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.253);
+    visibility: hidden;
+}
+#result{
+    margin-left: 1em;
+    color: white;
+    
+}
+#warning{
+    position: absolute;
+}
+#warning{
+    color: red;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    margin-top: 8em;
+    visibility: hidden;
+}
+#upcommingbirthday{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30vh;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+}
+#countdownHeading{
+    border-left: 1.5px solid black;
+    border-right: 1.5px solid black;
+    padding: 0px 5px 0px 5px;
+    background-color: rgba(255, 255, 255, 0.836);
+}
+#countdown{
+    font-size: 1.5em;
+    color: rgb(0, 0, 0);
+    background: linear-gradient(to right,#FF3C3C,#BE5FAB,#3AA7E7);
+    padding: 8px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.253);
+}
+
+@media screen and (max-width: 500px) {
+    #gritting{
+        font-size: 1em;
+    }
+  }
